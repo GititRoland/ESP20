@@ -132,7 +132,7 @@ void loop() {
   static uint32_t HALL_TIMESTAMP_MICROS = micros(); // TAKE HALL TIMESTAMP - us
 
   // TOGGLE LED EVERY 1 SECONDS
-  stateLED = togglePIN(stateLED, LED_PIN);
+  stateLED = togglePIN(stateLED, LED_PIN); // Dosen't work rn as there is no delay.
 
   // Check the analog read every 1 seconds. -- Remove comment if needed. 
   /* Serial.print("Analog Value: ");
